@@ -8,7 +8,14 @@ body {
     color: white !important;
     font-size: 18px;
 }
+.clearfix:before, .clearfix:after{
+    content: " ";
+    display: table;
+}
 
+.clearfix:after{
+    clear: both;
+}
 
 /* Nav-bar style*/
 .navbar-default {
