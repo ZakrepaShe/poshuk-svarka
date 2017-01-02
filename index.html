@@ -1,92 +1,177 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-        <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <title>index</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>index</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/normalize.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/fonts.css" media="all" />
-        <link rel="stylesheet" href="css/style.css" media="all" />
-    </head>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css" media="all"/>
+    <link rel="stylesheet" href="css/style.css" media="all"/>
+</head>
 
-    <body>
+<body>
 
-          
+
 <header>
-         	<nav class="navbar navbar-default">
-         	   <div class="container-fluid">
-         	       <!-- Brand and toggle get grouped for better mobile display -->
-         	       <div class="navbar-header">
-         	           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-         	               <span class="sr-only">Навигация</span>
-         	               <span class="icon-bar"></span>
-         	               <span class="icon-bar"></span>
-         	               <span class="icon-bar"></span>
-         	           </button>
-         	           <a class="navbar-brand" href="#">
-         	               <img class="img-responsive" src="img/logo.png" alt="Logo" />
-         	           </a>
-         	       </div>
-         	
-         	       <!-- Collect the nav links, forms, and other content for toggling -->
-         	       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-         	           <ul class="nav navbar-nav">
-         	               <li >
-         	                   <a href="#">Главное</a>
-         	               </li>
-         	               <li>
-         	                   <a href="#">О нас</a>
-         	               </li>
-         	           </ul>
-         	           <!-- code for the right side of the navbar -->
-         	           <ul class="nav navbar-nav navbar-right">
-         	               <li>
-         	                   <a href="#">Оплата и доставка</a>
-         	               </li>
-                           <li>
-                               <a href="#">Контакты</a>
-                           </li>
-         	           </ul>
-         	       </div><!-- /.navbar-collapse -->
-         	   </div><!-- /.container-fluid -->
-         	        </nav>
-         	        
-         </header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Навигация</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="img-responsive" src="img/logo.png" alt="Logo"/>
+                </a>
+            </div>
 
-<section class="main-vid">
-    <div class="cection-container">
-        <div class="video"></div>
-        <div class="main-text">
-            <h1 class="main-title">Ищешь сварку обратись на "Пошук"</h1>
-            <p>(044) 257-42-05</p>
-            <p>(067) 536 49 85</p>
-            <p>(066) 359 66 20</p>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Главное</a>
+                    </li>
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                </ul>
+                <!-- code for the right side of the navbar -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Оплата и доставка</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
 
+<div class="ribbon">
+    <div class="main-vid tile">
+        <div class="section-container">
+            <div class="video-wrapper">
+                <video class="title-movie" preload autoplay loop>
+                    <source src="video/title_vid.mp4" />
+                    <source src="video/title_vid.webm" />
+                </video>
+                <div class="movie-hover"></div>
+            </div>
+
+            <div class="main-text">
+                <h3 class="main-title">Ищешь сварку обратись на "Пошук"</h3>
+                <p>(044) 257-42-05</p>
+                <p>(067) 536 49 85</p>
+                <p>(066) 359 66 20</p>
+            </div>
         </div>
-        <div class="main-phone"></div>
     </div>
-</section>
+    <div id="myCarousel" class="carousel slide tile" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/slider-template/slide-welding.jpg" alt="Chania">
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Опыт в сфере</h1>
+                        <p>Научно-техническое предприятие «Пошук» было основано в 1990 году  и стабильно работает на рынке
+                            сварочного  оборудования и материалов.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/slider-template/maxresdefault%20(1).jpg" alt="Chania">
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Широкий выбор</h1>
+                        <p> У нас Вы можете выбрать, заказать и купить все необходимые для сварки и родственных технологий
+                            (резки, наплавки, пайки и т.д.): от  професионального оборудования и сменных частей к нему, от
+                            комплексов автоматизированной механизированной  сварки до простого источника для ручной дуговой
+                            сварки, а также всевозможные сварочные материалы и средства защиты сварщиков.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/slider-template/maxresdefault.jpg" alt="Flower">
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Надежные поставщики</h1>
+                        <p>Мы сотрудничаем  с ведущими отечественными и зарубежными производителями  сварочного оборудования
+                            и материалов. Это позволяет нам постоянно расширять  и пополнять ассортимент  предлагаемой продукции,
+                            в том числе  и новинками  сварочной техники.
+                            Мы контролируем качество наших товаров, отвечаем за него, несем и выполняем гарантийные
+                            обязательства производителей.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/slider-template/maxresdefault%20(2).jpg" alt="Flower">
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Квалифицированные сотрудники</h1>
+                        <p>Профессиональная подготовка сотрудников (руководители- выпускники сварочного факультета КПИ с
+                            опытом работы на производстве) позволяет  нам  не только проконсультировать Вас и  предложить
+                            продукцию с оптимальным  сочитанием  цена-качество, но и испытать в Вашем присутствии
+                            предлагаемое  оборудование, продемонстрировать его работу, а при необходимости  отремонтировать
+                            и имеющееся у Вас сварочное оборудование.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
 
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-    </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
 </html>
 
 

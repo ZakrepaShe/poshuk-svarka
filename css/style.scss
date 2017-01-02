@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+@import "mixins";
+//Common style
+
+ * {
+   margin: 0;
+   padding: 0;
+ }
+
+body {
+  font-family: "Museo-Sans", sans-serif;
+  font-weight: 300;
+  color: white !important;
+  font-size: 18px;
+}
+.clearfix:before, .clearfix:after{
+  content: " ";
+  display: table;
+}
+
+.clearfix:after{
+  clear: both;
+}
+
+.tile {
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,1);
+  margin: 5px;
+}
+
+ //Nav-bar style
+.navbar-default {
+  background-color: white;
+  border-color: #e7e7e7;
+  box-shadow: 0 0 3px rgba(0,0,0,1)
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0 !important;
+}
+
+.navbar-toggle {
+  border-radius: 2px;
+}
+
+.container-fluid{
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbar-default .navbar-brand {
+  opacity: .7;
+}
+
+.navbar-brand {
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar-brand > img {
+  display: block;
+  height: 155%;
+  margin: -10% 0 0 0;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a {
+  transition: all .25s ease;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color: white;
+  background-color: #0d1868;
+
+}
+
+.carousel {
+
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.carousel-caption {
+  text-shadow: 0 0 6px #000, 0 0 3px #000;
+}
+
+.ribbon {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.main-vid {
+  background-color: #104b53;
+
+  .section-container{
+    @include flexbox;
+    //background: -moz-linear-gradient(left,  rgba(16,75,83,1) 0%, rgba(16,75,83,0) 20%, rgba(255,255,255,0) 50%, rgba(16,75,83,0.63) 61%, rgba(16,75,83,1) 100%);  FF3.6-15
+    //background: -webkit-linear-gradient(left,  rgba(16,75,83,1) 0%,rgba(16,75,83,0) 20%,rgba(255,255,255,0) 50%,rgba(16,75,83,0.63) 61%,rgba(16,75,83,1) 100%);  Chrome10-25,Safari5.1-6
+    //background: linear-gradient(to right,  rgba(16,75,83,1) 0%,rgba(16,75,83,0) 20%,rgba(255,255,255,0) 50%,rgba(16,75,83,0.63) 61%,rgba(16,75,83,1) 100%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#104b53', endColorstr='#104b53',GradientType=1 );  IE6-9
+
+    @media screen and (max-width: 991px) {
+      @include flex-flow(row, wrap);
+    }
+
+    .video-wrapper {
+      position: relative;
+      @include flex(1 50%);
+      width: 50%;
+      height: auto;
+      background-color: #000;
+
+      @media screen and (max-width: 991px) {
+        @include flex(1 100%);
+      }
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+
+      .title-movie {
+        position: relative;
+        @include flexbox;
+        width: 100%;
+        height: auto;
+        background-color: #000;
+
+        @media screen and (max-width: 991px) {
+          width: 50%;
+          margin: 0 auto;
+        }
+      }
+
+      .movie-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+
+        &:after {
+          content: '';
+          @include bg-fill;
+          box-shadow: inset 0 0 100px 50px black;
+        }
+
+        &:before {
+          content: '';
+          @include bg-fill;
+          background: url("../img/vid-overlay.jpg");
+          opacity: .2;
+        }
+
+        @media screen and (max-width: 991px) {
+          width: 50%;
+          left: 50%;
+          @include transform(translateX(-50%));
+
+          &:after {
+            box-shadow: inset 0 0 100px 25px black;
+          }
+        }
+      }
+
+    }
+
+    .main-text {
+      @include flex(1 50%);
+      background-color: #104b53;
+      padding: 20px;
+      text-align: right;
+
+      @media screen and (max-width: 991px) {
+        @include flex(1 100%);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
